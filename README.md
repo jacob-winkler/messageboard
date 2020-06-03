@@ -20,9 +20,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## TODO
 
-# Get SignalR push messages working
+### Get SignalR push messages working
 
-# Implement Login Flow
+### Implement Login Flow
 
 Keep this simple for now...
 * Add a user's table to the database
@@ -32,11 +32,11 @@ Keep this simple for now...
 
 * Build the user's panel component (probably just called Users)
 
-# Clean up the UI (make it dark!!)
+### Clean up the UI (make it dark!!)
 
-# Design channels/groups with "whispering" single user's in mind
+### Design channels/groups with "whispering" single user's in mind
 
-# Implement editing of sent messages
+### Implement editing of sent messages
 
 
 
