@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Before running the app, make sure the web API is running (API/MessageBoard.sln). I used visual studio 2019 with SSL disabled.
 
-Verify the port that the server is running on. Update the port of the client-side connection URLs, if needed, in the following files...
+Verify the port that the web API is running on. Update the port of the client-side connection URLs, if needed, in the following files...
 
 *src\app\Services\signal-r.service.ts
 *src\app\app.component.ts
