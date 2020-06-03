@@ -1,9 +1,9 @@
 import { Guid } from "guid-typescript";
 
 export class Message {
-    Id: Guid;
-    AuthorId: Guid;
-    GroupId: Guid;
-    DateCreated: Date;
-    Value: string;
+    id: Guid;
+    authorId: Guid;
+    groupId: Guid;
+    datecreated: Date;
+    value: string;
 }

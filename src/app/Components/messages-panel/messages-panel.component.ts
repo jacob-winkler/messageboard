@@ -26,7 +26,7 @@ export class MessagesPanelComponent implements OnInit {
   onSendMessage(value: string): void
   {
     this.messageService.sendMessage(
-      { Value: value } as Message).subscribe(hero => true);
+      { value: value } as Message).subscribe(hero => true);
   }
 
 }
