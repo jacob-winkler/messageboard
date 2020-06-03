@@ -8,9 +8,9 @@ Before running the app, make sure the web API is running (API/MessageBoard.sln).
 
 Verify the port that the web API is running on. Update the port of the client-side connection URLs, if needed, in the following files...
 
-*src\app\Services\signal-r.service.ts
-*src\app\app.component.ts
-*src\app\Services\message.service.ts
+* src\app\Services\signal-r.service.ts
+* src\app\app.component.ts
+* src\app\Services\message.service.ts
 
 You will likely need to create the local database as well by running the migrations within the Migrations folder of the web API (I'm not too familiar with this process, so this could be wrong, but that is my understanding).
 
