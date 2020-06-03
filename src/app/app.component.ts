@@ -13,9 +13,9 @@ export class AppComponent implements OnInit {
     private http: HttpClient) { }
 
   ngOnInit() {
-    // this.signalRService.startConnection();
-    // this.signalRService.addNewMessageListener();
-    // this.startHttpRequest();
+    this.signalRService.startConnection();
+    this.signalRService.addNewMessageListener();
+    this.startHttpRequest();
   }
 
   private startHttpRequest = () => {

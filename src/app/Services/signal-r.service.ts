@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import * as signalR from "@aspnet/signalr";
+import * as signalR from "@microsoft/signalr";
 import { Message } from "../Models/Message";
 
 @Injectable({
@@ -13,7 +13,8 @@ private hubConnection: signalR.HubConnection;
 
 public startConnection = () => {
   this.hubConnection = new signalR.HubConnectionBuilder()
-    .withUrl('http://localhost:63606/api/messages')
+    .withUrl('http://localhost:63606/messageHub')
+    .configureLogging(signalR.LogLevel.Information)
     .build();
 
   this.hubConnection

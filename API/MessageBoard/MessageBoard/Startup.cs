@@ -68,7 +68,7 @@ namespace MessageBoard
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHub<MessageHub>("/messages");
+                endpoints.MapHub<MessageHub>("/messageHub");
             });
 
             
