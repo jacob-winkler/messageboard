@@ -1,0 +1,9 @@
+<ul class="messages">
+    <li *ngFor="let message of messages">
+        <app-message [message]="message"></app-message>
+    </li>
+</ul>
+
+<mat-form-field appearance="fill" class="message-input">
+    <input #messageInput matInput placeholder="Message" (keyup.enter)="onSendMessage(messageInput.value)"/>
+</mat-form-field>
