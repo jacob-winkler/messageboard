@@ -4,24 +4,39 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+Before running the app, make sure the web API is running (API/MessageBoard.sln). I used visual studio 2019 with SSL disabled.
+
+Verify the port that the server is running on. Update the port of the client-side connection URLs, if needed, in the following files...
+
+*src\app\Services\signal-r.service.ts
+*src\app\app.component.ts
+*src\app\Services\message.service.ts
+
+You will likely need to create the local database as well by running the migrations within the Migrations folder of the web API (I'm not too familiar with this process, so this could be wrong, but that is my understanding).
+
+Once the web API is running you should be able to run the client.
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## TODO
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Get SignalR push messages working
 
-## Build
+# Implement Login Flow
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Keep this simple for now...
+* Add a user's table to the database
+* Add UsersController with login endpoint
+* Add a UsersService to the web API for handling business logic for existing users
+* Switching user's mid session?
 
-## Running unit tests
+* Build the user's panel component (probably just called Users)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Clean up the UI (make it dark!!)
 
-## Running end-to-end tests
+# Design channels/groups with "whispering" single user's in mind
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Implement editing of sent messages
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
