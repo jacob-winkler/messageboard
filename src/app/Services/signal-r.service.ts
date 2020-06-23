@@ -7,7 +7,7 @@ import { Message } from "../Models/Message";
 })
 export class SignalRService {
 
-public messages: Message[];
+public messages: Message[] = [];
 
 private hubConnection: signalR.HubConnection;
 
